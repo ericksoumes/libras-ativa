@@ -108,7 +108,7 @@ button:hover {
   align-items: center;
   float: left;
   margin-top: 50px;
-  height: 582px;
+  height: 500px;
   justify-content: center;
 }
 .titulo-home {
@@ -136,6 +136,7 @@ button:hover {
   width: 50%;
   float: left;
   margin-top: 50px;
+  height: 572px;
 }
 
 .imagem-home {
@@ -145,4 +146,9 @@ button:hover {
 .normal {
   clear: both;
   display: block;
+}
+
+.foto-sobre-mim {
+  background-color: white;
+  height: 500px;
 }
