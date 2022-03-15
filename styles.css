@@ -4,7 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #2086d0;
 }
 
 li,
@@ -37,6 +36,7 @@ li a:hover {
 }
 
 header {
+  background-color: #2086d0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -143,12 +143,83 @@ button:hover {
   width: 95%;
 }
 
-.normal {
-  clear: both;
-  display: block;
+.home {
+  background-color: #2086d0;
+  height: 622px;
 }
 
 .foto-sobre-mim {
-  background-color: white;
-  height: 500px;
+  width: 50%;
+  display: inline-block;
+  height: 700px;
+  text-align: center;
+  padding-top: 6%;
+  float: left;
+}
+
+.foto-ruan {
+  width: 400px;
+  border-radius: 50%;
+}
+
+.nome-ruan {
+  font-family: "Montserrat", sans-serif;
+  color: #0D0221;
+  padding-top: 20px;
+  font-size: 45px;
+}
+
+.texto-nome-ruan {
+  font-family: "Montserrat", sans-serif;
+  color: #0D0221;
+  font-size: 20px;
+  padding-top: 7px;
+}
+
+.sobre-ruan {
+  background-color: #FAB520;
+  width: 50%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-sobre-instrutor {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 25px;
+  padding-bottom: 35px;
+}
+
+.div-formacao {
+  width: 500px;
+  height: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.texto-formacao {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 23px;
+  width: 240px;
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+}
+
+span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.texto-sobre-ruan {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  width: 600px;
+  text-align: center;
 }
