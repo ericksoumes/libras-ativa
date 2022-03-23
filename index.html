@@ -9,71 +9,90 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img class="img-logo" src="arquivos/logo.png" alt="logo-lsa" />
-        <h3 class="titulo-la">Libras Ativa</h3>
+    <header class="top-navbar">
+      <div class="top-navbar__image-logo-and-title-logo">
+        <img class="top-navbar__image-logo" src="arquivos/logo.png" alt="logo-libras-ativa" />
+        <h3 class="top-navbar__title-logo">Libras Ativa</h3>
       </div>
-
-      <nav>
+      <nav class="top-navbar__drop-menu-and-links">
         <input type="checkbox" id="check">
-        <label class="menu" for="check">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </label>
-        <ul class="nav-links">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre nós</a></li>
-          <li><a href="#">Cursos</a></li>
-          <li><a href="#">Alunos</a></li>
+        <label class="top-navbar__drop-menu" for="check">
+          <div class="top-navbar__drop-menu--bar"></div>
+          <div class="top-navbar__drop-menu--bar"></div>
+          <div class="top-navbar__drop-menu--bar"></div>
+        </label>
+        <ul class="top-navbar__links">
+          <li class="top-navbar__links__name"><a href="#">Início</a></li>
+          <li class="top-navbar__links__name"><a href="#">Sobre nós</a></li>
+          <li class="top-navbar__links__name"><a href="#">Cursos</a></li>
+          <li class="top-navbar__links__name"><a href="#">Alunos</a></li>
         </ul>
       </nav>
 
-      <!--<a class="cta" href="#"><button>Matricule-se</button></a>-->
-
     </header>
     <div class="home">
-      <div class="container-img">
-        <img
-          class="imagem-home"
-          src="arquivos/imagem-home3.png"
-          alt="imagem-home"
-        />
-     </div>
-      <div class="container">
-         <h1 class="titulo-home">
+      <div class="home__block-img">
+        <img class="home__img" src="arquivos/imagem-home3.png" alt="duas pessoas conversando em LIBRAS"/>
+      </div>
+      <div class="home__title-text-and-button">
+         <h1 class="home__title">
           Aprenda a usar <br />
           o poder das mãos
          </h1>
-         <p class="texto-home">
+         <p class="home__text">
           A Libras Ativa existe há 3 anos e entrou na modalidade EaD em 2020.
           Nesses quase dois anos, ajudamos mais de 1.000 pessoas a aprender Libras
           de uma forma dinâmica, alegre e eficaz.
          </p>
-          <button>Matricule-se</button>
+          <button class="home__button">Matricule-se</button>
       </div>
-      
    </div>
-    
-    <div class="foto-sobre-mim">
-      <img class="foto-ruan" src="https://i.pinimg.com/originals/7d/3e/a8/7d3ea8bd75ccc8b1bc55e6ff7249ae5c.jpg" alt="foto-ruan">
-      <h1 class="nome-ruan">Ruan Mateus</h1>
-      <h2 class="texto-nome-ruan">Instrutor, Tradutor, Mentor e Interlocutor de Libras</h2>
+
+    <div class="presentation">
+      <img class="presentation__img" src="https://i.pinimg.com/originals/7d/3e/a8/7d3ea8bd75ccc8b1bc55e6ff7249ae5c.jpg" alt="foto-ruan">
+      <h1 class="presentation__name">Ruan Mateus</h1>
+      <h2 class="presentation__text">Instrutor, Tradutor, Mentor e Interlocutor de Libras</h2>
     </div>
-    <div class="sobre-ruan"> 
-      <p class="texto-sobre-instrutor">Sobre o instrutor:</p>
-      <div class="div-formacao">
-        <p class="texto-formacao">Abril <br><span>2020</span><br> Tradução e Interpretação de Libras</p>
-        <p class="texto-formacao">Junho <br><span>2020</span><br> Tradução e Interlocução de Libras</p>
-        <p class="texto-formacao">Julho <br><span>2020</span><br> Perícia na História das Línguas de Sinais</p>
-        <p class="texto-formacao">Agosto <br><span>2020</span><br> Formação em psicologia da educação</p>
-        <p class="texto-formacao">Dezembro <br><span>2021</span><br> Pedagogia da Educação</p>
-        <p class="texto-formacao">Janeiro <br><span>2022</span><br>Formação em Neuropedagogia pelo Núcleo de Tecnologia para Educação</p>
+    <div class="about"> 
+      <p class="about__title">Sobre o instrutor:</p>
+      <div class="about__courses">
+        <p class="about__text-courses">Abril <br><span class="about__text-courses--year">2020</span><br> Tradução e Interpretação de Libras</p>
+        <p class="about__text-courses">Junho <br><span class="about__text-courses--year">2020</span><br> Tradução e Interlocução de Libras</p>
+        <p class="about__text-courses">Julho <br><span class="about__text-courses--year">2020</span><br> Perícia na História das Línguas de Sinais</p>
+        <p class="about__text-courses">Agosto <br><span class="about__text-courses--year">2020</span><br> Formação em psicologia da educação</p>
+        <p class="about__text-courses">Dezembro <br><span class="about__text-courses--year">2021</span><br> Pedagogia da Educação</p>
+        <p class="about__text-courses">Janeiro <br><span class="about__text-courses--year">2022</span><br>Formação em Neuropedagogia pelo Núcleo de Tecnologia para Educação</p>
       </div>
       
-      <p class="texto-sobre-ruan">Ruan, o instrutor e CEO da Libras Ativa é um intérprete pernambucano, formado e especializado nas áreas acima. Nascido em 2004, ele é o TILS (Tradutor/Intérprete de Libras) mais novo do seu estado.</p>
+      <p class="about__text">Ruan, o instrutor e CEO da Libras Ativa é um intérprete pernambucano, formado e especializado nas áreas acima. Nascido em 2004, ele é o TILS (Tradutor/Intérprete de Libras) mais novo do seu estado.</p>
 
+    </div>
+    <div class="courses">
+      <div class="card-course">
+        <img class="card-course__img" src="/arquivos/curso1-basico.png" alt="imagem curso basico">
+        <h1 class="card-course__title">Curso Básico</h1>
+        <p class="card-course__text">Carga horária 50h <br> 13 apostilas e conteúdo que vai desde a origem do alfabeto aos elementos constitutivos dos sinais.</p>
+      </div>
+      <div class="card-course">
+        <img class="card-course__img" src="/arquivos/curso2-intermediario.png" alt="imagem curso basico">
+        <h1 class="card-course__title">Curso Intermediário</h1>
+        <p class="card-course__text">Carga horária 50h <br> Conteúdo vai desde a revisão geral do básico e foco no entendimento da sinalização até à introdução ao avançado.</p>
+      </div>
+      <div class="card-course">
+        <img class="card-course__img" src="/arquivos/curso3-avancado.png" alt="imagem curso basico">
+        <h1 class="card-course__title">Curso Avançado</h1>
+        <p class="card-course__text">Carga horária 20h <br> O curso avançado foca em conteúdos teóricos, como morfologia. O objetivo é ajudar o aluno a entender a parte mais profunda da língua, que é a gramática e suas ramificações. </p>
+      </div>
+      <div class="card-course">
+        <img class="card-course__img" src="/arquivos/curso4-interpretacao.png" alt="imagem curso basico">
+        <h1 class="card-course__title">Curso de Introdução à Interpretação e Tradução de Libras</h1>
+        <p class="card-course__text">Carga horária 100h <br> Visa ajudar o aluno a entender os princípios da profissão, seu código de ética e as várias formas de sinalização e uso em determinados ambientes.</p>
+      </div>
+      <div class="card-course">
+        <img class="card-course__img" src="/arquivos/curso5-progresso.png" alt="imagem curso basico">
+        <h1 class="card-course__title">Curso Progresso </h1>
+        <p class="card-course__text">Carga horária 120h <br> É a junção do curso intermediário, avançado e do curso de introdução à interpretação e tradução de Libras. </p>
+      </div>
     </div>
   </body>
 </html>

@@ -6,14 +6,42 @@
   padding: 0;
 }
 
-/* MENU SANDUICHE */
+/* LOGO E NOME */
 
-.menu {
-  cursor: pointer;
-  transition: 0.5s;
+.top-navbar {
+    background-color: #2086d0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%;
 }
 
-.menu .bar {
+.top-navbar__image-logo-and-title-logo {
+  cursor: pointer;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.top-navbar__image-logo {
+  width: 40px;
+}
+
+.top-navbar__title-logo {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  padding-left: 10px;
+}
+
+/* MENU DROPDOWN */
+
+.top-navbar__drop-menu {
+  cursor: pointer;
+}
+
+.top-navbar__drop-menu .top-navbar__drop-menu--bar {
   background: #fff;
   width: 45px;
   height: 7px;
@@ -21,23 +49,23 @@
   transition: 0.4s;
 }
 
-.menu .bar:not(:first-child) {
+.top-navbar__drop-menu .top-navbar__drop-menu--bar:not(:first-child) {
   margin-top: 8px;
 }
 
-#check:checked + .menu {
+#check:checked + .top-navbar__drop-menu {
   transform: rotateY(180deg);
 }
 
-#check:checked + .menu .bar:nth-child(1) {
+#check:checked + .top-navbar__drop-menu .top-navbar__drop-menu--bar:nth-child(1) {
   transform: rotate(-45deg);
 }
 
-#check:checked + .menu .bar:nth-child(2) {
+#check:checked + .top-navbar__drop-menu .top-navbar__drop-menu--bar:nth-child(2) {
   opacity: 0;
 }
 
-#check:checked + .menu .bar:nth-child(3) {
+#check:checked + .top-navbar__drop-menu .top-navbar__drop-menu--bar:nth-child(3) {
   margin-top: -22px;
   transform: rotate(45deg);
 }
@@ -46,59 +74,7 @@
   display: none;
 }
 
-/*
-.nav-links {
-  background: rgb(255, 255, 255);
-  position: fixed;
-  width: 298px;
-  height: 366px;
-  margin: 244px 0 0 0;
-  padding-top: 81px;
-  right: -100%;
-  transition: all 0.5s;
-}
-
-li, a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 25px;
-  color: #0D0221;
-  text-decoration: none;
-  list-style: none;
-  padding-top: 30px;
-  padding-left: 30px;
-}
-*/
-
-/* LOGO E NOME */
-
-header {
-  background-color: #2086d0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 5%;
-}
-
-.img-logo {
-  width: 40px;
-}
-
-.logo {
-  cursor: pointer;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-}
-
-.titulo-la {
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  font-size: 35px;
-  display: inline-block;
-  text-align: center;
-  padding-left: 10px;
-}
+/* PÁGINAS MENU */
 
 li,
 a,
@@ -131,22 +107,14 @@ li a:hover {
 
 /* MENU NAV */
 
-nav {
+.top-navbar__drop-menu-and-links {
   cursor: default;
 }
 
 
-.nav-links {
+.top-navbar__links {
   list-style: none;
   display: block;
-}
-
-.nav-links li a:hover {
-  color: #2086d0;
-  transition: .5s;
-}
-
-ul {
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -157,19 +125,76 @@ ul {
   transition: all .5s;
 }
 
-nav ul li {
+.top-navbar__links .top-navbar__links__name a:hover {
+  color: #2086d0;
+  transition: .4s;
+}
+
+
+.top-navbar__drop-menu-and-links .top-navbar__links .top-navbar__links__name {
   display: block;
   margin: 50px 0;
   line-height: 25px;
 }
 
-#check:checked ~ ul {
+#check:checked ~ .top-navbar__links {
   left: 0%;
 }
 
-/* BOTÃO */
 
-button {
+/* HOME PAGE */
+
+.home {
+  background-color: #2086d0;
+  height: auto;
+}
+
+.home__block-img {
+  display: block;
+  height: auto;
+  text-align: center;
+}
+
+.home__img {
+  width: 80%;
+  max-width: 500px;
+}
+
+.home__title-text-and-button {
+  background-color: #2086d0;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  height: auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home__title {
+  color: white;
+  font-size: 2.7em;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  width: auto;
+  text-align: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.home__text {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  display: block;
+  width: auto;
+  max-width: 600px;
+  margin: 20px;
+  line-height: 25px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.home__button {
   margin-bottom: 30px;
   padding: 9px 25px;
   background-color: #fab520;
@@ -180,90 +205,45 @@ button {
   transition: all 0.3s ease 0s;
 }
 
-button:hover {
+.home__button:hover {
   box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.301);
 }
 
-/* HOME PAGE */
+/* FOTO E NOME RUAN */
 
-.container-img {
-  display: block;
-  height: auto;
-  text-align: center;
-}
-
-.imagem-home {
-  width: 80%;
-}
-
-.container {
-  background-color: #2086d0;
-  width: 100%;
-  display: flex;
-  text-align: center;
-  height: auto;
-  align-items: center;
-  flex-direction: column;
-}
-
-.titulo-home {
-  color: white;
-  font-size: 2.7em;
-  font-family: "Montserrat", sans-serif;
-  display: block;
-  width: auto;
-  text-align: center;
-  align-items: center;
-}
-
-.texto-home {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1em;
-  display: block;
-  width: 420px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  line-height: 25px;
-  font-weight: normal;
-  text-align: center;
-}
-
-.home {
-  background-color: #2086d0;
-  height: auto;
-}
-
-.foto-sobre-mim {
+.presentation {
   width: auto;
   display: block;
   height: auto;
   text-align: center;
-  padding-top: 6%;
+  padding: 50px 0 50px;
 }
 
-.foto-ruan {
-  width: 300px;
+.presentation__img {
+  width: 240px;
   border-radius: 50%;
 }
 
-.nome-ruan {
+.presentation__name {
   font-family: "Montserrat", sans-serif;
   color: #0D0221;
   margin-top: 20px;
   font-size: 40px;
 }
 
-.texto-nome-ruan {
+.presentation__text {
   font-family: "Montserrat", sans-serif;
   color: #0D0221;
   font-size: 17px;
   padding-top: 7px;
   text-align: center;
-  margin-bottom: 40px;
+  width: auto;
+  margin: 0 20px;
 }
 
-.sobre-ruan {
+/* SOBRE O INSTRUTOR */
+
+.about {
   background-color: #FAB520;
   width: auto;
   height: auto;
@@ -274,7 +254,7 @@ button:hover {
   padding-bottom: 35px;
 }
 
-.texto-sobre-instrutor {
+.about__title {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-size: 25px;
@@ -282,33 +262,76 @@ button:hover {
   padding-bottom: 35px;
 }
 
-.div-formacao {
+.about__courses {
   width: auto;
-  height: 620px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.texto-formacao {
+.about__text-courses {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
-  font-size: 23px;
-  width: 240px;
+  font-size: 18px;
+  width: 150px;
   text-align: center;
   font-weight: 400;
   display: inline-block;
+  margin: 15px;
 }
 
-span {
+.about__text-courses--year {
   font-size: 30px;
   font-weight: bold;
 }
 
-.texto-sobre-ruan {
+.about__text {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
-  font-size: 20px;
-  width: 440px;
+  font-size: 18px;
+  width: auto;
+  max-width: 600px;
   text-align: center;
+  margin: 15px;
+}
+
+/* CURSOS */
+
+.courses {
+  background-color: #ffff;
+  height: auto;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-course {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  margin: 40px 0 40px;
+}
+
+.card-course__img {
+  width: 140px;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.card-course__title {
+  color: #0D0221;
+  margin: 5px;
+  text-align: center;
+  font-size: 25px;
+  width: 300px;
+}
+
+.card-course__text {
+  width: 310px;
+  text-align: center;
+  margin: 10px;
+  font-size: 16px;
 }
