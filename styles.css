@@ -335,3 +335,26 @@ li a:hover {
   margin: 10px;
   font-size: 16px;
 }
+
+.card__button {
+  margin: 10px 0 0 0;
+  padding: 9px 25px;
+  background-color: #dddd;
+  color: #0D0221;
+  border: #3686C5;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 16px;
+}
+
+.card__button:hover {
+  color: #fff;
+  background-color: #2086d0;
+  border: #0D0221;
+}
+
+footer {
+  background-color: #0D0221;
+  height: 200px;
+}
