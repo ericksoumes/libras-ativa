@@ -7,6 +7,7 @@
     <title>Libras Ativa</title>
     <link href="/arquivos/favicon.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/43c424c4f7.js" crossorigin="anonymous"></script>  
   </head>
   <body>
     <header class="top-navbar">
@@ -23,9 +24,16 @@
         </label>
         <ul class="top-navbar__links">
           <li class="top-navbar__links__name"><a href="#">Início</a></li>
-          <li class="top-navbar__links__name"><a href="#">Sobre nós</a></li>
-          <li class="top-navbar__links__name"><a href="#">Cursos</a></li>
-          <li class="top-navbar__links__name"><a href="#">Alunos</a></li>
+          <label class="dropdown" for="dropdown">Cursos</label>
+          <input  type="checkbox" id="dropdown">
+            <ul class="top-navbar__dropdown">
+              <li><a href="#">Curso Básico</a></li>
+              <li><a href="#">Curso Intermediário</a></li>
+              <li><a href="#">Curso Avançado</a></li>
+              <li><a href="#">Curso de Introdução à Interpretação e Tradução de Libras</a></li>
+              <li><a href="#">Curso Progresso</a></li>
+            </ul>
+          <li class="top-navbar__links__name"><a href="#">Contato</a></li>
         </ul>
       </nav>
 
@@ -100,10 +108,27 @@
       </div>
     </div>
     <div class="students">
-      <img class="students__img" src="/arquivos/imagem-alunos2.png" alt="imagem alunos da libra ativa">
+      <img class="students__img" src="/arquivos/imagem-alunos2.png" alt="imagem alunos da libra ativa">\
       <h2 class="students__title">Alguns alunos dos <br>nossos cursos!</h2>
       <h4 class="students__text">Faça, você também, parte <br>dessa história!</h2>
+      <button class="button home__button students__btn">Matricule-se</button>
     </div>
-    <footer>aaa</footer>
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__title">Cursos</li>
+        <li class="footer__course">Curso Básico</li>
+        <li class="footer__course">Curso Intermediário</li>
+        <li class="footer__course">Curso Avançado</li>
+        <li class="footer__course">Curso de Introdução à Interpretação e Tradução de Libras</li>
+        <li class="footer__course">Curso Progresso</li>
+      </ul>
+      <div class="social">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+    </footer>
+      <div class="credits">
+          <p class="credits__text">Desenvolvido por Erick Gomes</p>
+      </div>
   </body>
 </html>
