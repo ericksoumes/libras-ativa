@@ -6,6 +6,14 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: #000000;
+}
+
 /* LOGO E NOME */
 
 .top-navbar {
@@ -27,7 +35,7 @@
   width: 40px;
 }
 
-.top-navbar__title-logo {
+.top-navbar__title-logo a {
   font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 35px;
@@ -83,7 +91,6 @@
 /* PÁGINAS MENU */
 
 li,
-a,
 button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -148,9 +155,11 @@ li a:hover {
 .top-navbar__dropdown {
   list-style: none;
   position: absolute;
-  display: none;
   line-height: 40px;
   background-color: #e0dae4;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s ease-in;
 }
 .dropdown {
   font-family: "Montserrat", sans-serif;
@@ -167,7 +176,7 @@ li a:hover {
 }
 
 .top-navbar__links input:checked + ul {
-  display: block;
+  height: 200px;
 }
 
 #dropdown {
@@ -330,6 +339,10 @@ li a:hover {
 
 /* CURSOS */
 
+.courses a {
+  color: #fff;
+}
+
 .courses {
   background-color: #ffff;
   height: auto;
@@ -369,21 +382,16 @@ li a:hover {
 }
 
 .card__button {
-  margin: 10px 0 0 0;
   padding: 9px 25px;
-  background-color: #dddd;
-  color: #0d0221;
+  background-color: #2086d0;
+  margin: 10px 0 0 0;
   border: #3686c5;
+  color: #fff;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   font-size: 16px;
-}
-
-.card__button:hover {
-  color: #fff;
-  background-color: #2086d0;
-  border: #0d0221;
+  text-decoration: none;
 }
 
 /* IMAGEM ALUNOS */
@@ -422,6 +430,8 @@ li a:hover {
   position: absolute;
   margin-top: 190px;
 }
+
+/* FOOTER */
 
 .footer {
   background-color: #0d0221;
