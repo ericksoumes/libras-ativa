@@ -433,6 +433,10 @@ li a:hover {
 
 /* FOOTER */
 
+footer a {
+  color: #fff;
+}
+
 .footer {
   background-color: #0d0221;
   height: 300px;
@@ -496,4 +500,12 @@ li a:hover {
   font-size: 13px;
   color: #ffff;
   font-family: "Montserrat", sans-serif;
+}
+
+.credits__text a {
+  color: #fff;
+}
+
+.credits__text a:hover {
+  color: #2086d0;
 }

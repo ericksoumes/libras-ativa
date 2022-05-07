@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.curso-basico__title-and-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+}
+
+.curso-basico__img {
+  width: 100px;
+  margin: 0 12px 0 0;
+}
+
+.curso-basico__title {
+  font-size: 30px;
+  display: inline-block;
+}
+
+.curso-basico__paragraph {
+  font-size: 16px;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.classes {
+  margin: 8%;
+}
+
+.classes__title {
+  font-size: 20px;
+}
