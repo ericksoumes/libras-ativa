@@ -384,7 +384,7 @@ li a:hover {
 .card__button {
   padding: 9px 25px;
   background-color: #2086d0;
-  margin: 10px 0 0 0;
+  margin: 10px 0 10px 0;
   border: #3686c5;
   color: #fff;
   border-radius: 50px;
@@ -392,6 +392,11 @@ li a:hover {
   transition: all 0.3s ease 0s;
   font-size: 16px;
   text-decoration: none;
+}
+
+.card__button:hover {
+  font-size: 18px;
+  margin: 9px 0 9px 0;
 }
 
 /* IMAGEM ALUNOS */
@@ -435,6 +440,10 @@ li a:hover {
 
 footer a {
   color: #fff;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 .footer {
@@ -507,5 +516,5 @@ footer a {
 }
 
 .credits__text a:hover {
-  color: #2086d0;
+  text-decoration: underline;
 }

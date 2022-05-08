@@ -31,12 +31,42 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 5%;
 }
 
 .classes {
-  margin: 8%;
+  background-color: #2086d0;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .classes__title {
-  font-size: 20px;
+  font-size: 25px;
+  text-align: center;
+  margin: 5%;
+}
+
+.classes__card {
+  background-color: rgb(241, 241, 241);
+  color: #0d0221;
+  border-radius: 5%;
+  height: 310px;
+  width: 300px;
+  padding: 4%;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.classes__card--title {
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.classes__card--p {
+  margin: 7px;
 }
