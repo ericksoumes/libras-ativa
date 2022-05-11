@@ -72,57 +72,82 @@
     <div class="classes">
       <h1 class="classes__title">O que você vai aprender?</h1>
 
-      <div class="classes__card">
-        <h1 class="classes__card--title">MÓDULO 1</h1>
-        <p class="classes__card--p">
-          A verdade sobre a Libras, detalhes básicos da língua e início de
-          conversação.
-        </p>
-        <p class="classes__card--p">
-          Um pouco sobre gramática, prática com verbos e construção de frases.
-        </p>
-        <p class="classes__card--p">
-          Dias da semana, meses, conjunto de anos e utilização do tempo em
-          frases.
-        </p>
-      </div>
+      <div class="slider">
+        <input type="radio" name="slider" id="mod-1" checked />
+        <input type="radio" name="slider" id="mod-2" />
+        <input type="radio" name="slider" id="mod-3" />
+        <input type="radio" name="slider" id="mod-4" />
 
-      <div class="classes__card">
-        <h1 class="classes__card--title">MÓDULO 2</h1>
-        <p class="classes__card--p">
-          Sinais de comidas e bebidas, construção de frases e regionalismo
-          cultural.
-        </p>
-        <p class="classes__card--p">
-          Cômodos da casa, objetos, especificação de localização e verbos.
-        </p>
-        <p class="classes__card--p">
-          Sinais dos familiares e regionalismo situacional.
-        </p>
-      </div>
+        <div class="cards">
+          <label class="card" for="mod-1" id="c1">
+            <div class="classes__card">
+              <h1 class="classes__card--title">MÓDULO 1</h1>
+              <p class="classes__card--p">
+                A verdade sobre a Libras, detalhes básicos da língua e início de
+                conversação.
+              </p>
+              <p class="classes__card--p">
+                Um pouco sobre gramática, prática com verbos e construção de
+                frases.
+              </p>
+              <p class="classes__card--p">
+                Dias da semana, meses, conjunto de anos e utilização do tempo em
+                frases.
+              </p>
+            </div>
+          </label>
 
-      <div class="classes__card">
-        <h1 class="classes__card--title">MÓDULO 3</h1>
-        <p class="classes__card--p">
-          Mais sobre a gramática da Libras, sinais icônicos, arbitrários e
-          polissêmicos.
-        </p>
-        <p class="classes__card--p">Revisão geral e avaliação.</p>
-        <p class="classes__card--p">
-          Elementos constitutivos dos sinais, aprofundamento na gramática.
-        </p>
-      </div>
+          <label class="card" for="mod-2" id="c2">
+            <div class="classes__card">
+              <h1 class="classes__card--title">MÓDULO 2</h1>
+              <p class="classes__card--p">
+                Sinais de comidas e bebidas, construção de frases e regionalismo
+                cultural.
+              </p>
+              <p class="classes__card--p">
+                Cômodos da casa, objetos, especificação de localização e verbos.
+              </p>
+              <p class="classes__card--p">
+                Sinais dos familiares e regionalismo situacional.
+              </p>
+            </div>
+          </label>
 
-      <div class="classes__card">
-        <h1 class="classes__card--title">MÓDULO 4</h1>
-        <p class="classes__card--p">
-          Meios de transporte, sinais parecidos e regionalismo.
-        </p>
-        <p class="classes__card--p">
-          Partes do corpo humano, animais, natureza e cores.
-        </p>
-        <p class="classes__card--p">Estados brasileiros e profissões.</p>
+          <label class="card" for="mod-3" id="c3">
+            <div class="classes__card">
+              <h1 class="classes__card--title">MÓDULO 3</h1>
+              <p class="classes__card--p">
+                Mais sobre a gramática da Libras, sinais icônicos, arbitrários e
+                polissêmicos.
+              </p>
+              <p class="classes__card--p">Revisão geral e avaliação.</p>
+              <p class="classes__card--p">
+                Elementos constitutivos dos sinais, aprofundamento na gramática.
+              </p>
+            </div>
+          </label>
+
+          <label class="card" for="mod-4" id="c4">
+            <div class="classes__card">
+              <h1 class="classes__card--title">MÓDULO 4</h1>
+              <p class="classes__card--p">
+                Meios de transporte, sinais parecidos e regionalismo.
+              </p>
+              <p class="classes__card--p">
+                Partes do corpo humano, animais, natureza e cores.
+              </p>
+              <p class="classes__card--p">Estados brasileiros e profissões.</p>
+            </div>
+          </label>
+        </div>
       </div>
+      <!--
+       <button class="classes__btn classes__btn-1">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="classes__btn classes__btn-2">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>-->
     </div>
 
     <div class="benefits">
@@ -170,6 +195,21 @@
       <button class="home__button">Matricule-se</button>
     </div>
 
+    <div class="curso-basico__img-alunos">
+      <img
+        class="students__img curso-basico__students-img"
+        src="https://i.pinimg.com/originals/5e/4a/01/5e4a0166a49d712b258c9381241a2cf8.jpg"
+        alt="imagem alunos da libra ativa"
+      />
+      <img
+        class="curso-basico__text"
+        src="/arquivos/text.png"
+        alt="texto-curso-basico"
+      />
+    </div>
+
+    <div></div>
+
     <footer class="footer">
       <ul class="footer__list">
         <li class="footer__title">Cursos</li>
@@ -183,7 +223,6 @@
             >Curso de Introdução à Interpretação e Tradução de Libras</a
           >
         </li>
-        <li class="footer__course"><a href="">Curso Progresso</a></li>
       </ul>
       <div class="social">
         <a href="https://www.instagram.com/librasativa/"

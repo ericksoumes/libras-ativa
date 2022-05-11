@@ -41,6 +41,7 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 5%;
+  height: 420px;
 }
 
 .classes__title {
@@ -54,9 +55,8 @@
   color: #0d0221;
   border-radius: 5%;
   height: 310px;
-  width: 300px;
+  width: 260px;
   padding: 4%;
-  margin: 2%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,6 +70,94 @@
 
 .classes__card--p {
   margin: 7px;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*.fa-solid {
+  opacity: 70%;
+}
+
+.classes__btn {
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.562);
+  width: 28px;
+  border-radius: 50%;
+  z-index: 1;
+  border: 1px solid #00000073;
+}
+.classes__btn-1 {
+  position: absolute;
+  left: 50px;
+  top: 650px;
+}
+
+.classes__btn-2 {
+  position: absolute;
+  right: 30px;
+  top: 650px;
+}*/
+
+input {
+  display: none;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+#mod-1:checked ~ .cards #c4,
+#mod-2:checked ~ .cards #c1,
+#mod-3:checked ~ .cards #c2,
+#mod-4:checked ~ .cards #c3 {
+  transform: translateX(-30%) scale(0.8);
+  opacity: 0.7;
+  z-index: 0;
+}
+#mod-1:checked ~ .cards #c2,
+#mod-2:checked ~ .cards #c3,
+#mod-3:checked ~ .cards #c4,
+#mod-4:checked ~ .cards #c1 {
+  transform: translateX(30%) scale(0.8);
+  opacity: 0.7;
+  z-index: 0;
+}
+#mod-1:checked ~ .cards #c1,
+#mod-2:checked ~ .cards #c2,
+#mod-3:checked ~ .cards #c3,
+#mod-4:checked ~ .cards #c4 {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+#mod-1:checked ~ .cards #c3,
+#mod-2:checked ~ .cards #c4,
+#mod-3:checked ~ .cards #c1,
+#mod-4:checked ~ .cards #c2 {
+  transform: translateX(0) scale(0);
+  opacity: 0;
+  z-index: 0;
 }
 
 .benefits {
@@ -100,4 +188,19 @@
 .benefits__button {
   display: flex;
   justify-content: center;
+}
+
+.curso-basico__img-alunos {
+  display: flex;
+  align-items: center;
+}
+
+.curso-basico__students-img {
+  position: relative;
+  z-index: 1;
+}
+.curso-basico__text {
+  z-index: 2;
+  position: absolute;
+  width: 410px;
 }
