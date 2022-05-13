@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: center;
   margin: 5%;
+  flex-direction: column;
 }
 
 .curso-basico__img {
@@ -22,6 +23,7 @@
 .curso-basico__title {
   font-size: 30px;
   display: inline-block;
+  padding-top: 5%;
 }
 
 .curso-basico__paragraph {
@@ -51,7 +53,7 @@
 }
 
 .classes__card {
-  background-color: rgb(241, 241, 241);
+  background-color: #f1f1f1;
   color: #0d0221;
   border-radius: 5%;
   height: 310px;

@@ -1,0 +1,13 @@
+.top-navbar {
+  background-color: #8cd86b;
+}
+
+.classes {
+  background-color: #8cd86b;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+  height: 420px;
+}
