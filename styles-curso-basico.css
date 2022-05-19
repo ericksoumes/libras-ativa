@@ -13,6 +13,7 @@
   justify-content: center;
   margin: 5%;
   flex-direction: column;
+  text-align: center;
 }
 
 .curso-basico__img {
@@ -83,30 +84,6 @@
   flex-direction: column;
   align-items: center;
 }
-
-/*.fa-solid {
-  opacity: 70%;
-}
-
-.classes__btn {
-  margin: 0;
-  background-color: rgba(255, 255, 255, 0.562);
-  width: 28px;
-  border-radius: 50%;
-  z-index: 1;
-  border: 1px solid #00000073;
-}
-.classes__btn-1 {
-  position: absolute;
-  left: 50px;
-  top: 650px;
-}
-
-.classes__btn-2 {
-  position: absolute;
-  right: 30px;
-  top: 650px;
-}*/
 
 input {
   display: none;
@@ -192,9 +169,14 @@ input {
   justify-content: center;
 }
 
+.home__button a {
+  color: #ffff;
+}
+
 .curso-basico__img-alunos {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .curso-basico__students-img {

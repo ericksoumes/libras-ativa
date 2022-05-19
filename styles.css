@@ -24,6 +24,10 @@ nav a {
   padding: 25px 5%;
 }
 
+.top-navbar-menu-opened {
+  overflow-y: hidden;
+}
+
 .top-navbar__image-logo-and-title-logo {
   cursor: pointer;
   margin-right: auto;
@@ -150,14 +154,16 @@ li a:hover {
 
 #check:checked ~ .top-navbar__links {
   left: 0%;
+  z-index: 10;
 }
 
 .top-navbar__dropdown {
   list-style: none;
   position: absolute;
   line-height: 40px;
+  width: 100%;
+  height: 0;
   background-color: #e0dae4;
-  height: 0px;
   overflow: hidden;
   transition: height 0.5s ease-in;
   z-index: 10;
@@ -177,7 +183,7 @@ li a:hover {
 }
 
 .top-navbar__links input:checked + ul {
-  height: 200px;
+  height: 100%;
 }
 
 #dropdown {
@@ -245,6 +251,10 @@ li a:hover {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+}
+
+.home__button a {
+  color: #ffff;
 }
 
 .home__button:hover {
@@ -450,7 +460,7 @@ footer a:hover {
 .footer {
   background-color: #0d0221;
   height: 270px;
-  width: auto;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
