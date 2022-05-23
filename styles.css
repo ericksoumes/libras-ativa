@@ -529,3 +529,22 @@ footer a:hover {
 .credits__text a:hover {
   text-decoration: underline;
 }
+
+@media (min-width: 581px) and (max-width: 1024px) {
+  .students__title {
+    font-size: 60px;
+    margin-bottom: 90px;
+  }
+
+  .students__text {
+    font-size: 30px;
+    margin-top: 125px;
+  }
+
+  .students__btn {
+    margin-bottom: -75px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}

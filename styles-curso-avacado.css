@@ -4,10 +4,8 @@
 
 .classes {
   background-color: #f24407;
-  color: #ffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 5%;
-  height: 420px;
+}
+
+.curso-basico__title {
+  max-width: 400px;
 }
