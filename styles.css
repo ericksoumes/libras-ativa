@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -96,7 +97,7 @@ nav a {
 
 li,
 button {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 20px;
   color: #0d0221;
@@ -169,8 +170,7 @@ li a:hover {
   z-index: 10;
 }
 .dropdown {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   color: #0d0221;
   text-decoration: none;
@@ -206,6 +206,8 @@ li a:hover {
 .home__img {
   width: 80%;
   max-width: 500px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .home__title-text-and-button {
@@ -221,7 +223,7 @@ li a:hover {
 .home__title {
   color: white;
   font-size: 2.7em;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   display: block;
   width: auto;
   text-align: center;
@@ -231,7 +233,9 @@ li a:hover {
 
 .home__text {
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1em;
   display: block;
   width: auto;
@@ -277,14 +281,14 @@ li a:hover {
 }
 
 .presentation__name {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #0d0221;
   margin-top: 20px;
   font-size: 40px;
 }
 
 .presentation__text {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #0d0221;
   font-size: 17px;
   padding-top: 7px;
@@ -307,7 +311,7 @@ li a:hover {
 }
 
 .about__title {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffffff;
   font-size: 25px;
   padding-top: 35px;
