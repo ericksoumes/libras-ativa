@@ -88,6 +88,10 @@ input {
   display: none;
 }
 
+.cards2 {
+  display: none;
+}
+
 .cards {
   position: relative;
   width: 100%;
@@ -144,8 +148,8 @@ input {
 
 .benefits__title {
   font-size: 25px;
-  width: 200px;
   max-width: 200px;
+  margin-left: 5%;
 }
 
 .benefits__div {
@@ -189,17 +193,61 @@ input {
   width: 410px;
 }
 
-@media (min-width: 680px) and (max-width: 1024px) {
-  .curso-basico__text {
-    width: 700px;
+@media (min-width: 992px) {
+  #check {
+    display: none;
   }
 
-  .benefits__title {
-    margin-left: 20%;
+  .top-navbar__drop-menu {
+    display: none;
   }
-}
 
-@media (min-width: 1025px) {
+  .top-navbar__links {
+    list-style: none;
+    display: flex;
+    height: auto;
+    position: unset;
+    background-color: #2086d0;
+  }
+
+  .top-navbar__links a {
+    color: #fff;
+    margin: 0 50px 0 50px;
+  }
+
+  .top-navbar__links__name {
+    color: #fff;
+  }
+
+  .top-navbar__drop-menu-and-links .top-navbar__links .top-navbar__links__name {
+    margin: 0;
+  }
+
+  .top-navbar__dropdown a {
+    color: #0d0221;
+  }
+
+  .top-navbar__dropdown {
+    width: fit-content;
+    top: 70px;
+    right: 120px;
+  }
+
+  .top-navbar__links input:checked + ul {
+    height: fit-content;
+  }
+
+  .top-navbar__links .top-navbar__links__name a:hover {
+    color: #fab520;
+    transition: 0.4s;
+  }
+
+  .dropdown:hover {
+    color: #fab520;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
   .curso-basico__title-and-img {
     display: inline-block;
   }
@@ -208,11 +256,92 @@ input {
     display: inline-block;
   }
 
-  .classes {
-    display: inline-block;
+  .curso-basico__title-and-img {
+    display: flex;
+    flex-direction: row;
+    margin: 60px;
   }
 
-  .top-navbar__drop-menu-and-links {
+  .curso-basico__img {
+    width: 230px;
+    order: 3;
+    margin-left: 2.5%;
+  }
+
+  .curso-basico__title-and-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2.5%;
+  }
+
+  .curso-basico__title {
+    order: 1;
+    font-size: 50px;
+  }
+
+  .curso-basico__paragraph {
+    order: 2;
+    margin: 0;
+    max-width: 515px;
+  }
+
+  .classes {
+    display: block;
+    height: auto;
+  }
+
+  .classes__title {
+    padding: 30px;
+    margin: 0;
+  }
+
+  .slider {
+    width: 100%;
+    height: auto;
+  }
+
+  .cards {
     display: none;
+  }
+
+  .cards2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .classes__card {
+    margin: 1%;
+  }
+
+  .benefits {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .benefits__title {
+    display: block;
+    margin: auto;
+    max-width: 500px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  .curso-basico__text {
+    width: 700px;
+  }
+
+  .benefits__button {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  .home__button:hover {
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.301);
   }
 }
